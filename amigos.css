@@ -1,0 +1,48 @@
+.titulo1{
+    color: darkgoldenrod;
+    font-size: 4em;
+    position: relative;
+    left: 530px;
+    top: 50%;
+}
+
+h2{
+   color: goldenrod;
+   position: relative;
+   left: 75px;
+}
+
+.foto1{
+    position: relative;
+    left: 30px;
+}
+
+.titulo2{
+    color: darkolivegreen;
+    font-size: 2em;
+    position: relative;
+    left: 300px;
+    bottom: 250px;
+}
+
+.parrafo1{
+    font-size: 1em;
+    width: 500px;
+    position: relative;
+    bottom: 200px;
+    left: 550px;
+}
+
+.titulo3{
+    font-size: 2em;
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+}
+
+h3{
+    color: orange;
+    font-size: xx-large;
+    position: relative;
+    left: 160px;
+}

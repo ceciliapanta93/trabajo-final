@@ -12,9 +12,10 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <h1 class="text-center">Jackie Chang</h1>
+    
+  <h1 class="text-center">Jackie Chang</h1>
 
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
       <div class="container-fluid"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,7 +26,7 @@
               <a class="nav-link active" aria-current="page" href="#">Presentacion</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Familia</a>
+              <a class="nav-link" href="familia.html">Familia</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Amigos</a>
@@ -40,17 +41,33 @@
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-light" type="submit">Search</button>
           </form>
         </div>
       </div>
     </nav>
-
-
-    <div>
-      <img src="imagenes/106071820_106810044420551_7481593959626194898_n.jpg" class="rounded mx-auto d-block" alt="...">
+  
+  
+    <div id="carouselExampleControls" class="carousel slide"  data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/106071820_106810044420551_7481593959626194898_n.jpg" class="rounded mx-auto d-block" alt="..."  width="700px" height="150x">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/106071820_106810044420551_7481593959626194898_n.jpg" class="rounded mx-auto d-block" alt="..." width="700px" height="150px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="card mb-2">
+       <br><br>
+    <div class="card border-light mb-3">
       <img src="imagenes/Captura.PNG" class="rounded mx-auto d-block" alt="...">
       <div class="card-body">
         <h5 class="card-title">Presentacion</h5>
@@ -62,6 +79,8 @@
         <p class="card-text"><small class="text-muted"></small></p>
       </div>
     </div>
+
+    
 
     <footer class="pie-pagina">
       <div class="grupo1">

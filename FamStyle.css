@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    border-color: #efefef;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,8 +47,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
 *{
@@ -120,3 +119,4 @@ table {
         padding: 35px 0px ;
     }
 }
+

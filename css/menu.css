@@ -1,0 +1,187 @@
+
+/* ----- Globales ----- */
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+    padding: 1rem;
+}
+.rojo {
+    color: #de2229;
+    font-weight: 650;
+    font-size: 2.5rem;
+}
+.logo h2{
+    font-weight: 700;
+}
+.ocultar {
+    display: none;
+}
+
+.btn-cerrar{
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    user-select: none;
+}
+
+.btn-cerrar:hover{
+    cursor: pointer;
+}
+
+.pantalla-completa{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}
+
+@keyframes desplazamiento {
+    0%{ 
+        transform: translate(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* ---- ----- ----- Encabezado Menú ----- ----- ----- */
+.contenedor-navegacion {
+    background: #141414;
+    position: relative;
+    z-index: 5;
+    
+}
+.contenido-navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2, .navegacion a{
+    color: #fff;
+}
+
+.navegacion a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    padding-bottom: 0.8rem;
+    display: block;
+    transition: background-color .3s ease-in-out;
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    .navegacion a{
+        text-align: left;
+        margin-left: -7.5rem;
+        margin-right: -3.5rem;
+        padding-left: 3rem;
+    }
+}
+
+.navegacion a:hover{
+    background-color: #de2229;
+    color: #fff;
+}
+.navegacion {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #141414;
+    bottom: 1px;
+    height: 100vh;
+    width: 30rem;
+    padding: 5rem 0rem 0 7.5rem;
+    font-weight: 500;
+    animation: desplazamiento .5s ease-in-out;
+}
+
+.hamburguesa:hover{
+    cursor: pointer;
+}
+.hamburguesa span{
+    background-color: #fff;
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    margin-bottom: .4rem;
+    border-radius: 1rem;
+}
+
+/* ---- ----- ----- Pie de Página Footer ----- ----- ----- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+.pie-pagina{
+    width: 100%;
+    background-color: #101010;  
+}
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px ;
+}
+.pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+}
+.pie-pagina .grupo1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #202020;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo1 a:hover{
+    background-color: #de2229;
+}
+.pie-pagina .grupo2{
+    background-color: #202020;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px ;
+    }
+}

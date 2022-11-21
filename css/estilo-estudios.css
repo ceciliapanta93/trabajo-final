@@ -1,0 +1,326 @@
+
+html{
+    box-sizing: border-box;
+}
+
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    
+}
+/* ----- Globales ----- */
+.contenedor1 {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*----- Banner -----*/
+.banner {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(/img/img-estudios/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+.banner .container {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+.banner .titulo {
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+.banner .descripcion {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.75em;
+    max-width: 48%;
+    margin-bottom: 1.25em;
+}
+
+.banner .boton:hover {
+    background: #de2229;
+    color: #fff;
+}
+
+.banner .boton{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.90em 1.85em;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.10em;
+    text-transform: uppercase;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 768px) {
+	.banner {
+		font-size: 14px;
+	}
+	.banner .descripcion {
+		max-width: 100%;
+	}
+}
+
+/* -------------- Sobre Estudios --------------- */
+.contenedor-estudios{
+    width: 100%;
+}
+@media (min-width: 768px){
+    .contenedor-estudios{
+        display: flex;
+        justify-content: space-between;
+        width: 82%;
+    }
+}
+.texto-estudios{
+    font-size: 60%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.texto-estudios .title{
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.title span{
+    color: #fff;
+    padding: 0.7rem 2.8rem;
+}
+.title .badge{
+    background-color: #de2229;
+    border-radius: 0 2rem 2rem 0;
+    font-weight: 450;
+    font-size: 1.2rem;
+}
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media (min-width: 768px){
+    .texto-estudios{ 
+        text-align: left;
+    }
+}
+.texto-estudios h1{
+    font-size: 3rem;
+}
+.texto-estudios p{
+    font-size: 1rem;
+}
+.imagenes-estudios{
+    display: flex;
+    justify-content: space-between;
+}
+.imagenes-estudios img{
+    border-radius: 5px;
+}
+.texto-estudios, .imagenes-estudios{
+    flex: 0 0 calc(50% - 1rem);
+}
+.imagen1, .imagenes2{
+    flex: 0 0 calc(50% - 0.5rem);
+    width: 20%;
+}
+.imagenes2 img{
+    margin-bottom: 1rem;
+}
+.imagen1 img{
+    margin-top: 4.2rem;
+}
+
+/* -------------- Seccion proyectos --------------- */
+.menu{
+    width: 100%;    
+}
+.texto-cine{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.verde{
+    background-color: #00A149;
+    border: none;
+    margin-bottom: 1rem;
+    color: #fff;
+    border-radius: 0 2rem 2rem 0;
+}
+.secciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.secciones .verde:hover{
+    background-color: #202020;
+    cursor: pointer;
+}
+.secciones span{
+    padding: 0.5rem 2.8rem;
+}
+
+/* ---- ----- ----- Media Queries  ----- ----- ----- */
+@media(min-width: 768px){
+    .menu{
+        width: 82%;    
+    }
+    .secciones{
+        display: flex;
+        justify-content: left;
+    }
+    .secciones span{
+        flex: unset;
+        padding: 0.3rem 3rem;
+        margin-right: 1rem;
+    }
+    .title .badge{
+        background-color: #de2229;
+        border-radius: 0 2rem 2rem 0;
+    }
+}
+
+/*------ seccion peliculas ------*/
+.cine{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.film {
+    flex: 0 0 calc(22.2% - 1rem);
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.film h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.film p {
+    font-size: 1rem;
+}
+.boton-ver span{
+    padding: 0.2rem 3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #de2229;
+    color: #fff;
+    font-size: 1rem;
+}
+.boton-ver{
+    display: flex;
+    justify-content: center;
+}
+
+/*------ seccion galeria ------*/
+.contenido{
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 28px 0;
+}
+
+.gallery{
+    background: #fff;
+}
+.contenido-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.show{
+
+    transform: translate(0);
+}
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+
+}
+.showImage{
+    transform: scale(1);
+}
+.close{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* ---- ----- ----- Media Queries  ----- ----- ----- */
+@media screen and (max-width: 768px) {
+	.agregar-imagen{
+		width: 90%;
+	}
+	.img-galeria {
+		width: 95%;
+	}
+    .contenido{
+        width: 100%;
+    }
+    .premio-fila{
+        width: 100% !important;
+        text-align: center;
+        padding: -5rem;
+    }
+    .fila1, .fila2{
+        padding: -5rem;
+    }
+}
+
+/*------ seccion premio------*/
+.premio-fila{
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: center;
+    display: flex;
+}
+.premio-fila .fila1, .fila2{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
